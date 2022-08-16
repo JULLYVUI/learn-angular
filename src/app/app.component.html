@@ -12,6 +12,12 @@
             {{page.name}}
           </ion-item>
         </ion-menu-toggle>
+        <ion-item>
+          <ion-select placeholder="Select language" (ionChange)="switchLanguage($event)">
+            <ion-select-option value="en">English</ion-select-option>
+            <ion-select-option value="jp">Japan</ion-select-option>
+          </ion-select>
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>

@@ -30,7 +30,8 @@ export class AppComponent {
     });
   }
 
-  public get currentLanguage(): string {
-    return this.translate.currentLang;
+  switchLanguage($event) {
+    this.translate.use($event.target.value);
+    console.log($event.target.value);
   }
 }
